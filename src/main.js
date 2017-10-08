@@ -1,10 +1,11 @@
 import Vue from 'vue'
 
 import router from './router/index'
-import logo from './components/Logo.vue'
+import navbar from './components/Navbar.vue'
+import newsbar from './components/Newsbar.vue'
 
-
-Vue.component('logo', logo)
+Vue.component('navbar', navbar)
+Vue.component('newsbar', newsbar)
 
 // eslint-disable-next-line no-new
 new Vue({

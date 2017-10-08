@@ -3,7 +3,9 @@
     <h2>{{title}}</h2>
   </div>
 </template>
+
 <!--Komentarz od Mariusza-->
+
 <script>
 export default {
   name: 'home',
