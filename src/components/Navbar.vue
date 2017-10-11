@@ -3,6 +3,15 @@
     <div id="logo" class="font-largest">
       WIADOMOŚCI / LOGO
     </div>
+    <div>
+      <form action="">
+        <input type="text" placeholder="Szukaj w serwisie" class="search" >
+        <button type="submit" class="search-button">
+            <img src="../../src/assets/img/magnify-black.png" class="btn-black" width="39" height="39" alt="submit" />
+            <img src="../../src/assets/img/magnify-white.png" class="btn-white" width="39" height="39" alt="submit" />
+        </button>
+      </form>
+    </div>
     <div id="menu">
       <ul>
         <li>Opcja</li>
@@ -13,6 +22,7 @@
         <li>Opcja</li>
       </ul>
     </div>
+
   </div>
 </template>
 
@@ -34,6 +44,59 @@
 </script>
 
 <style scoped>
+
+  .search-button{
+    border: 0;
+    background: transparent;
+    float: right;
+    height: 39px;
+    width: 39px;
+    padding: 6px;
+    margin: 0;
+    border-radius: 90px;
+    margin-right: 5px;
+    outline: none;
+  }
+
+  .btn-black{
+    display: none;
+  }
+
+  .search-button:hover{
+    transition: 0.2s;
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .search-button:hover .btn-white{
+    display: none;
+  }
+ 
+  .search-button:hover .btn-black{
+    display: block;
+  }
+
+  .search{
+    float: right;
+    height: 39px;
+    width: 250px;
+    padding: 10px;
+    margin-right: 20%;
+    background-color: #00346A;
+    border: none;
+    border-radius: 5px;
+    color: gray;
+    outline: none;
+  }
+
+  .search:focus{
+    color: #E0E0E0;
+  }
+
+  .search:focus::-webkit-input-placeholder{
+    color: #C7C7C7;
+    transition: 0.1s;
+  }
+
   #navbar{
     background-color: #00264d;
     color: #F8F3F3;
