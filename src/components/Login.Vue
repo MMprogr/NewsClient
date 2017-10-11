@@ -4,7 +4,7 @@
     <form @submit.prevent="login()">
       <input type="text" placeholder="nick" v-model="credentials.username">
       <input type="password" placeholder="password" v-model="credentials.password">
-      <input value="LOGIN" type="submit">
+      <input value="LOGIN"  type="submit">
     </form>
   </div>
 </template>

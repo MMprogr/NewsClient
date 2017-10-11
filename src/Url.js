@@ -7,4 +7,8 @@ export default class Url {
     return this.API_URL + 'login'
   }
 
+  // static get ARTICLE_ID (){
+  //   return this.API_URL + 'article' + id;
+  // }
+
 }

@@ -11,6 +11,8 @@
 </template>
 
 <script>
+  /* eslint-disable linebreak-style,semi,indent */
+
   export default{
     name: 'newsbar',
     created(){
@@ -22,16 +24,16 @@
     var i = 0;
     setInterval(function () {
 
-      if(i == 2) i = 0;
-      else i++;
-      
-      var sliderElements = document.getElementById('bar').querySelectorAll('.slider-element');
-      sliderElements.forEach(function(element) {
-        element.classList.add('hidden');
-      }, this);
+    if(i == 2) i = 0;
+    else i++;
 
-      var el = document.getElementById('slider' + i).classList.remove('hidden');
-    }, 3000);
+      var sliderElements =  document.getElementById('bar').querySelectorAll('.slider-element');
+      sliderElements.forEach(function(element) {
+      element.classList.add('hidden');
+    }, this);
+
+    var el = document.getElementById('slider' + i).classList.remove('hidden');
+  }, 3000);
   }
 
 </script>
