@@ -10,7 +10,7 @@
             <div class="offer-main">
               <img class="offerImage" src="http://via.placeholder.com/320x150" alt="Badania neiniszczące">
               <div class="offer-icon">
-                <img src="../assets/img/Dot64white.png" class="dead-center">
+                <img src="../assets/img/Dot64white.png" >
               </div>
             </div>
             <h3 class="offer-name">{{news.text}}</h3>
